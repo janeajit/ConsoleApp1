@@ -18,7 +18,7 @@ namespace ConsoleApp1
             var result =
                 await httpclient.GetAsync(appsettings);
             string responseBody = await result.Content.ReadAsStringAsync();
-            var jobject = JsonConvert.DeserializeObject<JObject>(responseBody);
+           // var jobject = JsonConvert.DeserializeObject<JObject>(responseBody);
             Console.WriteLine(result);
             return result;
         }
